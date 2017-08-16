@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import argparse
-import matplotlib.pyplot as plt
 import numpy as np
 from numpy.lib.arraypad import _validate_lengths
 from PIL import Image
@@ -96,6 +95,7 @@ def main():
     print(mssim)
 
     if args.plot:
+        import matplotlib.pyplot as plt
         plt.imshow(ssim, cmap='magma')
         plt.colorbar()
         plt.show()
