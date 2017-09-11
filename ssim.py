@@ -78,7 +78,10 @@ def main():
     parser.add_argument('image', help='Filename of the image to test')
     parser.add_argument('ref_image', help='Filename of the reference image')
     parser.add_argument(
-        '--plot', help='plot the SSIM for the image', action='store_true')
+        '-p',
+        '--plot',
+        help='plot the SSIM for the image',
+        action='store_true')
     args = parser.parse_args()
 
     image = Image.open(args.image).convert('L')
