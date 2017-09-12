@@ -99,7 +99,7 @@ def main():
 
     if args.plot:
         import matplotlib.pyplot as plt
-        plt.imshow(ssim, cmap='magma')
+        plt.imshow(ssim, cmap='magma', vmin=-1, vmax=1)
         plt.colorbar()
         plt.show()
 
